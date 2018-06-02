@@ -70,7 +70,6 @@ class Proj4GUI( QMainWindow ):
     def fillTable(self):
         for i in range(self.table.rowCount()):
             for j in range(i,self.table.columnCount()):
-                #if j >= i:
                 if self.processed_results:
                     if len(self.processed_results[i][j]) > 0:
                         results = self.processed_results[i][j]
